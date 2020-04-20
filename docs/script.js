@@ -2676,6 +2676,10 @@ var onSubmitForm = function onSubmitForm() {
       if (err) err.remove();
     }
 
+    _elements__WEBPACK_IMPORTED_MODULE_0__["default"].numberInput.addEventListener('focus', function () {
+      _elements__WEBPACK_IMPORTED_MODULE_0__["default"].numberInput.style.border = '1px solid deepskyblue';
+      _elements__WEBPACK_IMPORTED_MODULE_0__["default"].numberInput.nextElementSibling.remove();
+    });
     return valid;
   }
 
